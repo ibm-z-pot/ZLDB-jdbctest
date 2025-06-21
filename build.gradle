@@ -1,0 +1,17 @@
+plugins {
+  id 'war'
+}
+
+repositories {
+  mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+  compileOnly group: 'jakarta.platform', name: 'jakarta.jakartaee-api', version: '10.0.0'
+}
